@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "Sound.h"
+#import "SoundsTableViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +18,40 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
     // Override point for customization after application launch.
+    self.sounds = [NSMutableDictionary dictionary];
+    NSManagedObjectContext *ctx = [self managedObjectContext];
+   
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Sound"
+                                              inManagedObjectContext:ctx];
+    [fetchRequest setEntity:entity];
+    NSError *error;
+    NSArray *fetchedObjects = [ctx executeFetchRequest:fetchRequest error:&error];
+    if ([fetchedObjects count] == 0) {
+        NSString *plist = [[NSBundle mainBundle] pathForResource:@"Soundlist" ofType:@"plist"];
+        NSArray *sounds = [NSArray arrayWithContentsOfFile:plist];
+    
+        for (int i = 0; i < sounds.count; i++) {
+            Sound *sound = [NSEntityDescription insertNewObjectForEntityForName:@"Sound" inManagedObjectContext:ctx];
+            NSDictionary *dict = [sounds objectAtIndex:i];
+            sound.name = [dict objectForKey:@"name"];
+            sound.extension = [dict objectForKey:@"extension"];
+            sound.group = [dict objectForKey:@"group"];
+            sound.path = NULL;
+        }
+    
+        NSError *error;
+        if (![ctx save:&error]) {
+            NSLog(@"Couldn't save entity");
+        }
+    }
+    
+    UITabBarController *tabBar = (UITabBarController *)self.window.rootViewController;
+    UINavigationController *navController = (UINavigationController *)[tabBar.viewControllers objectAtIndex:2];
+    SoundsTableViewController *controller = (SoundsTableViewController *)navController.topViewController;
+    controller.managedObjectContext = self.managedObjectContext;
     return YES;
 }
 

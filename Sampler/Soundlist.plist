@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>Hihat1</string>
+		<key>extension</key>
+		<string>wav</string>
+		<key>group</key>
+		<string>Dirty Pack</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Snare1</string>
+		<key>extension</key>
+		<string>wav</string>
+		<key>group</key>
+		<string>Dirty Pack</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Kick1</string>
+		<key>extension</key>
+		<string>wav</string>
+		<key>group</key>
+		<string>Dirty Pack</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>chop1</string>
+		<key>extension</key>
+		<string>wav</string>
+		<key>group</key>
+		<string>Tenderly Samples</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>chop2</string>
+		<key>extension</key>
+		<string>wav</string>
+		<key>group</key>
+		<string>Tenderly Samples</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>chop3</string>
+		<key>extension</key>
+		<string>wav</string>
+		<key>group</key>
+		<string>Tenderly Samples</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>chop4</string>
+		<key>extension</key>
+		<string>wav</string>
+		<key>group</key>
+		<string>Tenderly Samples</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>chop5</string>
+		<key>extension</key>
+		<string>wav</string>
+		<key>group</key>
+		<string>Tenderly Samples</string>
+	</dict>
+</array>
+</plist>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="iDC-ow-Z3x">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Play-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ButtonsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +15,708 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WiB-Br-WsB">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <color key="backgroundColor" red="0.96241714020000002" green="0.80258319789999999" blue="0.31966105459999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="400" width="384" height="119"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="drums" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d4q-vg-UvS">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="18"/>
+                                <color key="textColor" red="0.3785615269" green="0.66639775820000002" blue="0.50504124819999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="126" y="488" width="124" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sample" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kAu-19-MA4">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
+                                <color key="textColor" red="0.96241714020000002" green="0.80258319789999999" blue="0.31966105459999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="130" y="112" width="124" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="play" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ec0-CB-gPt">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="28"/>
+                                <color key="textColor" red="0.96241714020000002" green="0.80258319789999999" blue="0.31966105459999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="129" y="20" width="127" height="54"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="drums: sounds don't cut off" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EBs-Gy-Pce">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
+                                <color key="textColor" red="0.96241714020000002" green="0.80258319789999999" blue="0.31966105459999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="9" y="545" width="358" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="samples: sounds cut off" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FB2-Cn-kxl">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
+                                <color key="textColor" red="0.96241714020000002" green="0.80258319789999999" blue="0.31966105459999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="9" y="574" width="358" height="21"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I2q-YI-ADe">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="15"/>
+                                <state key="normal" title="13">
+                                    <color key="titleColor" red="0.96241714020000002" green="0.80258319789999999" blue="0.31966105459999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="19" y="141" width="75" height="75"/>
+                                </variation>
+                                <connections>
+                                    <action selector="awayPad13:" destination="vXZ-lx-hvc" eventType="touchUpOutside" id="uX3-p7-1Zn"/>
+                                    <action selector="pad13Down:" destination="vXZ-lx-hvc" eventType="touchDown" id="08K-Lp-N2K"/>
+                                    <action selector="tappedPad13:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="KZl-bV-gX2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rii-Gt-8px">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="15"/>
+                                <state key="normal" title=" 14">
+                                    <color key="titleColor" red="0.96241714020000002" green="0.80258319789999999" blue="0.31966105459999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="107" y="141" width="75" height="75"/>
+                                </variation>
+                                <connections>
+                                    <action selector="awayPad14:" destination="vXZ-lx-hvc" eventType="touchUpOutside" id="hWH-lU-69K"/>
+                                    <action selector="pad14Down:" destination="vXZ-lx-hvc" eventType="touchDown" id="zed-Jv-33E"/>
+                                    <action selector="tappedPad14:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="eVg-GS-Tx0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6xc-Hw-6uJ">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="15"/>
+                                <state key="normal" title=" 15">
+                                    <color key="titleColor" red="0.96241714020000002" green="0.80258319789999999" blue="0.31966105459999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="195" y="141" width="75" height="75"/>
+                                </variation>
+                                <connections>
+                                    <action selector="awayPad15:" destination="vXZ-lx-hvc" eventType="touchUpOutside" id="LaI-Cd-ku7"/>
+                                    <action selector="pad15Down:" destination="vXZ-lx-hvc" eventType="touchDown" id="FtE-MH-tSS"/>
+                                    <action selector="tappedPad15:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="EVC-rY-Dnd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4R7-Xo-xuL">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="15"/>
+                                <state key="normal" title=" 16">
+                                    <color key="titleColor" red="0.96241714020000002" green="0.80258319789999999" blue="0.31966105459999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="283" y="141" width="75" height="75"/>
+                                </variation>
+                                <connections>
+                                    <action selector="awayPad16:" destination="vXZ-lx-hvc" eventType="touchUpOutside" id="IfA-iP-kEx"/>
+                                    <action selector="pad16Down:" destination="vXZ-lx-hvc" eventType="touchDown" id="1Yv-ww-Bjm"/>
+                                    <action selector="tappedPad16:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="5oA-UU-q9b"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iUU-o6-Bif">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="15"/>
+                                <state key="normal" title="9">
+                                    <color key="titleColor" red="0.96241714020000002" green="0.80258319789999999" blue="0.31966105459999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="19" y="229" width="75" height="75"/>
+                                </variation>
+                                <connections>
+                                    <action selector="awayPad9:" destination="vXZ-lx-hvc" eventType="touchUpOutside" id="AZU-zB-pq0"/>
+                                    <action selector="pad9Down:" destination="vXZ-lx-hvc" eventType="touchDown" id="GQH-mC-hrv"/>
+                                    <action selector="tappedPad9:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ua3-73-XDw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QbE-MM-eWo">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="15"/>
+                                <state key="normal" title=" 10">
+                                    <color key="titleColor" red="0.96241714020000002" green="0.80258319789999999" blue="0.31966105459999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="107" y="229" width="75" height="75"/>
+                                </variation>
+                                <connections>
+                                    <action selector="awayPad10:" destination="vXZ-lx-hvc" eventType="touchUpOutside" id="a8C-b9-WtZ"/>
+                                    <action selector="pad10Down:" destination="vXZ-lx-hvc" eventType="touchDown" id="T6M-1E-mNj"/>
+                                    <action selector="tappedPad10:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="j40-Fh-f6W"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WKH-3l-mLi">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="15"/>
+                                <state key="normal" title="11">
+                                    <color key="titleColor" red="0.96241714020000002" green="0.80258319789999999" blue="0.31966105459999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="195" y="229" width="75" height="75"/>
+                                </variation>
+                                <connections>
+                                    <action selector="awayPad11:" destination="vXZ-lx-hvc" eventType="touchUpOutside" id="iRY-vu-feS"/>
+                                    <action selector="pad11Down:" destination="vXZ-lx-hvc" eventType="touchDown" id="pag-zU-WqC"/>
+                                    <action selector="tappedPad11:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ZCo-sn-Qsj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wLb-wu-V7q">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="15"/>
+                                <state key="normal" title=" 12">
+                                    <color key="titleColor" red="0.96241714020000002" green="0.80258319789999999" blue="0.31966105459999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="283" y="229" width="75" height="75"/>
+                                </variation>
+                                <connections>
+                                    <action selector="awayPad12:" destination="vXZ-lx-hvc" eventType="touchUpOutside" id="gyC-XM-yjr"/>
+                                    <action selector="pad12Down:" destination="vXZ-lx-hvc" eventType="touchDown" id="hIK-50-sXJ"/>
+                                    <action selector="tappedPad12:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Xjv-py-0ap"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pbF-YE-Ix6">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="15"/>
+                                <state key="normal" title="5">
+                                    <color key="titleColor" red="0.96241714020000002" green="0.80258319789999999" blue="0.31966105459999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="19" y="317" width="75" height="75"/>
+                                </variation>
+                                <connections>
+                                    <action selector="awayPad5:" destination="vXZ-lx-hvc" eventType="touchUpOutside" id="Nd7-3B-E7t"/>
+                                    <action selector="pad5Down:" destination="vXZ-lx-hvc" eventType="touchDown" id="KGQ-La-H4M"/>
+                                    <action selector="tappedPad5:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Bj7-Qh-cvs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ecU-Ju-QAq">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="15"/>
+                                <state key="normal" title="6">
+                                    <color key="titleColor" red="0.96241714020000002" green="0.80258319789999999" blue="0.31966105459999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="107" y="317" width="75" height="75"/>
+                                </variation>
+                                <connections>
+                                    <action selector="awayPad6:" destination="vXZ-lx-hvc" eventType="touchUpOutside" id="Sv7-Ja-oau"/>
+                                    <action selector="pad6Down:" destination="vXZ-lx-hvc" eventType="touchDown" id="362-u2-4qk"/>
+                                    <action selector="tappedPad6:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="qbf-WZ-T5d"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HHZ-gd-53Z">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="15"/>
+                                <state key="normal" title="8">
+                                    <color key="titleColor" red="0.96241714020000002" green="0.80258319789999999" blue="0.31966105459999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="283" y="317" width="75" height="75"/>
+                                </variation>
+                                <connections>
+                                    <action selector="awayPad8:" destination="vXZ-lx-hvc" eventType="touchUpOutside" id="jSI-oq-jNU"/>
+                                    <action selector="pad8Down:" destination="vXZ-lx-hvc" eventType="touchDown" id="IRa-qT-dUx"/>
+                                    <action selector="tappedPad8:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="avB-E3-GeE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zsn-QS-9yk">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="15"/>
+                                <state key="normal" title=" 1">
+                                    <color key="titleColor" red="0.96241714020000002" green="0.80258319789999999" blue="0.31966105459999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="19" y="406" width="75" height="75"/>
+                                </variation>
+                                <connections>
+                                    <action selector="awayPad1:" destination="vXZ-lx-hvc" eventType="touchUpOutside" id="ajK-8r-c62"/>
+                                    <action selector="pad1Down:" destination="vXZ-lx-hvc" eventType="touchDown" id="GlD-v0-umd"/>
+                                    <action selector="tappedPad1:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Gsr-eB-2cl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jbU-pJ-OIb">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="15"/>
+                                <state key="normal" title="2">
+                                    <color key="titleColor" red="0.96241714020000002" green="0.80258319789999999" blue="0.31966105459999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="107" y="406" width="75" height="75"/>
+                                </variation>
+                                <connections>
+                                    <action selector="awayPad2:" destination="vXZ-lx-hvc" eventType="touchUpOutside" id="4Nt-qf-xET"/>
+                                    <action selector="pad2Down:" destination="vXZ-lx-hvc" eventType="touchDown" id="IGS-nj-nax"/>
+                                    <action selector="tappedPad2:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ecT-An-VN3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TUK-Yg-cKI">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="15"/>
+                                <state key="normal" title="3">
+                                    <color key="titleColor" red="0.96241714020000002" green="0.80258319789999999" blue="0.31966105459999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="195" y="405" width="75" height="75"/>
+                                </variation>
+                                <connections>
+                                    <action selector="awayPad3:" destination="vXZ-lx-hvc" eventType="touchUpOutside" id="auF-L7-77D"/>
+                                    <action selector="pad3Down:" destination="vXZ-lx-hvc" eventType="touchDown" id="qlf-7h-ye9"/>
+                                    <action selector="tappedPad3:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="qLu-dP-Gv4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0th-l6-Qi0">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="15"/>
+                                <state key="normal" title="4">
+                                    <color key="titleColor" red="0.96241714020000002" green="0.80258319789999999" blue="0.31966105459999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="283" y="405" width="75" height="75"/>
+                                </variation>
+                                <connections>
+                                    <action selector="awayPad4:" destination="vXZ-lx-hvc" eventType="touchUpOutside" id="4oA-YA-7fW"/>
+                                    <action selector="pad4Down:" destination="vXZ-lx-hvc" eventType="touchDown" id="KQu-Vg-ZID"/>
+                                    <action selector="tappedPad4:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="rJo-90-his"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uyf-Mx-OrS">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="15"/>
+                                <state key="normal" title="7">
+                                    <color key="titleColor" red="0.96241714020000002" green="0.80258319789999999" blue="0.31966105459999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="195" y="317" width="75" height="75"/>
+                                </variation>
+                                <connections>
+                                    <action selector="awayPad7:" destination="vXZ-lx-hvc" eventType="touchUpOutside" id="eIe-Cq-HWI"/>
+                                    <action selector="pad7Down:" destination="vXZ-lx-hvc" eventType="touchDown" id="jt3-mL-QNN"/>
+                                    <action selector="tappedPad7:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="5hu-Ty-7w0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.37856152685575933" green="0.66639775815217384" blue="0.50504124818292317" alpha="1" colorSpace="calibratedRGB"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="WiB-Br-WsB"/>
+                                <exclude reference="d4q-vg-UvS"/>
+                                <exclude reference="kAu-19-MA4"/>
+                                <exclude reference="ec0-CB-gPt"/>
+                                <exclude reference="EBs-Gy-Pce"/>
+                                <exclude reference="FB2-Cn-kxl"/>
+                                <exclude reference="I2q-YI-ADe"/>
+                                <exclude reference="rii-Gt-8px"/>
+                                <exclude reference="6xc-Hw-6uJ"/>
+                                <exclude reference="4R7-Xo-xuL"/>
+                                <exclude reference="iUU-o6-Bif"/>
+                                <exclude reference="QbE-MM-eWo"/>
+                                <exclude reference="WKH-3l-mLi"/>
+                                <exclude reference="wLb-wu-V7q"/>
+                                <exclude reference="pbF-YE-Ix6"/>
+                                <exclude reference="ecU-Ju-QAq"/>
+                                <exclude reference="HHZ-gd-53Z"/>
+                                <exclude reference="zsn-QS-9yk"/>
+                                <exclude reference="jbU-pJ-OIb"/>
+                                <exclude reference="TUK-Yg-cKI"/>
+                                <exclude reference="0th-l6-Qi0"/>
+                                <exclude reference="Uyf-Mx-OrS"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="WiB-Br-WsB"/>
+                                <include reference="d4q-vg-UvS"/>
+                                <include reference="kAu-19-MA4"/>
+                                <include reference="ec0-CB-gPt"/>
+                                <include reference="EBs-Gy-Pce"/>
+                                <include reference="FB2-Cn-kxl"/>
+                                <include reference="I2q-YI-ADe"/>
+                                <include reference="rii-Gt-8px"/>
+                                <include reference="6xc-Hw-6uJ"/>
+                                <include reference="4R7-Xo-xuL"/>
+                                <include reference="iUU-o6-Bif"/>
+                                <include reference="QbE-MM-eWo"/>
+                                <include reference="WKH-3l-mLi"/>
+                                <include reference="wLb-wu-V7q"/>
+                                <include reference="pbF-YE-Ix6"/>
+                                <include reference="ecU-Ju-QAq"/>
+                                <include reference="HHZ-gd-53Z"/>
+                                <include reference="zsn-QS-9yk"/>
+                                <include reference="jbU-pJ-OIb"/>
+                                <include reference="TUK-Yg-cKI"/>
+                                <include reference="0th-l6-Qi0"/>
+                                <include reference="Uyf-Mx-OrS"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Play" image="playicon.png" id="q30-e9-fxP"/>
+                    <navigationItem key="navigationItem" id="jSG-GB-tRZ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="2182.5" y="52.5"/>
+        </scene>
+        <!--Sounds Table View Controller-->
+        <scene sceneID="MpA-r4-74h">
+            <objects>
+                <tableViewController id="5Zt-7D-dzO" customClass="SoundsTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="pg9-LG-gPb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="sound" id="zAb-yG-i0o" customClass="SoundTableViewCell">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zAb-yG-i0o" id="5Sc-3c-Ufe">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="DD1-1n-sWY" kind="show" identifier="soundSelected" id="Giw-zS-8xC"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="5Zt-7D-dzO" id="sJO-s0-bLF"/>
+                            <outlet property="delegate" destination="5Zt-7D-dzO" id="GTx-ly-pLn"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="DLr-al-wws"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gxa-vC-rf1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2824.5" y="681"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="eYI-P1-kgd">
+            <objects>
+                <viewController id="DD1-1n-sWY" customClass="DetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nVo-KQ-jyS"/>
+                        <viewControllerLayoutGuide type="bottom" id="DwO-Vu-y17"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gPd-Rl-Zu6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="16" translatesAutoresizingMaskIntoConstraints="NO" id="cWJ-8o-7EB">
+                                <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="64" y="362" width="240" height="31"/>
+                                </variation>
+                                <connections>
+                                    <action selector="slideMoved:" destination="DD1-1n-sWY" eventType="valueChanged" id="tVj-fD-Oxn"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GSu-sR-Klo">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="18"/>
+                                <state key="normal" title="assign">
+                                    <color key="titleColor" red="0.96241714015151514" green="0.80258319785578014" blue="0.31966105464816924" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="147" y="487" width="74" height="33"/>
+                                </variation>
+                                <connections>
+                                    <action selector="assignButtonPressed:" destination="DD1-1n-sWY" eventType="touchUpInside" id="YD4-YY-n5S"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="target pad:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VlQ-4o-HFi">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="17"/>
+                                <color key="textColor" red="0.96241714020000002" green="0.80258319789999999" blue="0.31966105459999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="94" y="321" width="131" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UBI-jl-bEV">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="17"/>
+                                <color key="textColor" red="0.96241714020000002" green="0.80258319789999999" blue="0.31966105459999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="215" y="321" width="42" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BJI-YK-MU2">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="17"/>
+                                <color key="textColor" red="0.96241714020000002" green="0.80258319789999999" blue="0.31966105459999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="81" width="368" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Group" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="erm-w6-7vm">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="17"/>
+                                <color key="textColor" red="0.96241714020000002" green="0.80258319789999999" blue="0.31966105459999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="126" width="368" height="21"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rIY-vz-8dM">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.3785615269" green="0.66639775820000002" blue="0.50504124819999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" backgroundImage="playicon.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="160" y="208" width="48" height="48"/>
+                                </variation>
+                                <connections>
+                                    <action selector="playButtonDown:" destination="DD1-1n-sWY" eventType="touchDown" id="uMq-F1-gK7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.3785615269" green="0.66639775820000002" blue="0.50504124819999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="cWJ-8o-7EB"/>
+                                <exclude reference="GSu-sR-Klo"/>
+                                <exclude reference="VlQ-4o-HFi"/>
+                                <exclude reference="UBI-jl-bEV"/>
+                                <exclude reference="BJI-YK-MU2"/>
+                                <exclude reference="erm-w6-7vm"/>
+                                <exclude reference="rIY-vz-8dM"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="cWJ-8o-7EB"/>
+                                <include reference="GSu-sR-Klo"/>
+                                <include reference="VlQ-4o-HFi"/>
+                                <include reference="UBI-jl-bEV"/>
+                                <include reference="BJI-YK-MU2"/>
+                                <include reference="erm-w6-7vm"/>
+                                <include reference="rIY-vz-8dM"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="groupName" destination="erm-w6-7vm" id="sKU-Kj-kDS"/>
+                        <outlet property="nameText" destination="BJI-YK-MU2" id="51X-gk-iz1"/>
+                        <outlet property="numText" destination="UBI-jl-bEV" id="qHX-Jl-lN3"/>
+                        <outlet property="padSlider" destination="cWJ-8o-7EB" id="HYr-gc-GFA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Iye-Ff-0bn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3460.5" y="681"/>
+        </scene>
+        <!--Record-->
+        <scene sceneID="ga9-rA-vSA">
+            <objects>
+                <viewController id="Dtg-Wl-NLw" customClass="RecordViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Y7y-Nh-xFp"/>
+                        <viewControllerLayoutGuide type="bottom" id="n0s-eP-lZw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1Ax-dN-4Dm">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="record" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IR4-Km-J5I">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="28"/>
+                                <color key="textColor" red="0.96241714020000002" green="0.80258319789999999" blue="0.31966105459999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="129" y="20" width="127" height="54"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BKU-BR-0cU">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="19"/>
+                                <state key="normal" title="record">
+                                    <color key="titleColor" red="0.96241714020000002" green="0.80258319789999999" blue="0.31966105459999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="64" y="214" width="96" height="52"/>
+                                </variation>
+                                <connections>
+                                    <action selector="recordPauseTapped:" destination="Dtg-Wl-NLw" eventType="touchUpInside" id="1Cg-q6-0Pk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gqr-cT-TZs">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.3785615269" green="0.66639775820000002" blue="0.50504124819999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="19"/>
+                                <state key="normal" title="stop">
+                                    <color key="titleColor" red="0.96241714020000002" green="0.80258319789999999" blue="0.31966105459999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="227" y="214" width="96" height="52"/>
+                                </variation>
+                                <connections>
+                                    <action selector="stopTapped:" destination="Dtg-Wl-NLw" eventType="touchUpInside" id="BFb-A0-8NG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bfj-fl-Bdi">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.3785615269" green="0.66639775820000002" blue="0.50504124819999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="19"/>
+                                <state key="normal" title="play">
+                                    <color key="titleColor" red="0.96241714020000002" green="0.80258319789999999" blue="0.31966105459999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="151" y="315" width="92" height="52"/>
+                                </variation>
+                                <connections>
+                                    <action selector="playTapped:" destination="Dtg-Wl-NLw" eventType="touchUpInside" id="jgU-co-L3F"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZQg-wT-CsW">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.3785615269" green="0.66639775820000002" blue="0.50504124819999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
+                                <state key="normal" title="save">
+                                    <color key="titleColor" red="0.96241714020000002" green="0.80258319789999999" blue="0.31966105459999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="151" y="431" width="92" height="52"/>
+                                </variation>
+                                <connections>
+                                    <action selector="saveButtonTapped:" destination="Dtg-Wl-NLw" eventType="touchUpInside" id="V9O-uh-FVQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.3785615269" green="0.66639775820000002" blue="0.50504124819999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="IR4-Km-J5I"/>
+                                <exclude reference="BKU-BR-0cU"/>
+                                <exclude reference="gqr-cT-TZs"/>
+                                <exclude reference="Bfj-fl-Bdi"/>
+                                <exclude reference="ZQg-wT-CsW"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="IR4-Km-J5I"/>
+                                <include reference="BKU-BR-0cU"/>
+                                <include reference="gqr-cT-TZs"/>
+                                <include reference="Bfj-fl-Bdi"/>
+                                <include reference="ZQg-wT-CsW"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <tabBarItem key="tabBarItem" tag="2" title="Record" image="recordicon.png" id="Kut-cn-pSl"/>
+                    <connections>
+                        <outlet property="playButton" destination="Bfj-fl-Bdi" id="UfO-wx-ynl"/>
+                        <outlet property="recordPauseButton" destination="BKU-BR-0cU" id="A0w-1E-Hrp"/>
+                        <outlet property="saveButton" destination="ZQg-wT-CsW" id="qxf-uI-dyu"/>
+                        <outlet property="stopButton" destination="gqr-cT-TZs" id="i2t-Gf-wIE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lay-tw-XsW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2824.5" y="52.5"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="r0m-Ct-5n7">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="iDC-ow-Z3x" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Pwe-xO-1HV">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <outlet property="delegate" destination="rov-kb-bls" id="tDU-ev-Gb9"/>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="viewControllers" id="zHo-Qw-tfG"/>
+                        <segue destination="Dtg-Wl-NLw" kind="relationship" relationship="viewControllers" id="SMi-fV-4jd"/>
+                        <segue destination="zum-wN-dJJ" kind="relationship" relationship="viewControllers" id="TzF-FK-9Ja"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yU7-5e-zf3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="rov-kb-bls" userLabel="TabBarDelegate" customClass="TabBarControllerDelegate"/>
+            </objects>
+            <point key="canvasLocation" x="1389" y="398.25"/>
+        </scene>
+        <!--Library-->
+        <scene sceneID="HGB-TO-hGc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zum-wN-dJJ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Library" image="libicon.png" id="JuE-fx-qTx"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eIT-eS-B3e">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="5Zt-7D-dzO" kind="relationship" relationship="rootViewController" id="BbQ-fb-NmC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6WI-pB-YUV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2182.5" y="681"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="libicon.png" width="32" height="32"/>
+        <image name="playicon.png" width="32" height="32"/>
+        <image name="recordicon.png" width="32" height="32"/>
+    </resources>
 </document>
