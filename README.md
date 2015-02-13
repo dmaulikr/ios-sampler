@@ -21,4 +21,4 @@ Choose from previous recordings and a few preloaded sounds to start.
 Select a cell to be able to play it back, as well as assign it to a numbered pad on the PLAY screen.
 If there is already a sound assigned to your chosen pad, you will be asked for permission to overwrite. 
 
-Record your own drum sounds, record people playing instruments, record anything you want. Then just assign the sounds to pads and make your own music out of it.
+Record pencil tapping, record people playing instruments, record anything you want. Then just assign the pads and make music.
